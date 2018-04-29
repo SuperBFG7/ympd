@@ -620,8 +620,10 @@ function webSocketConnect() {
                     if(current_app === 'queue')
                         socket.send('MPD_API_GET_QUEUE,'+pagination);
                     break;
-                case 'song_change':
 
+              case "song_change":
+              
+                    changeCover(obj);
                     $('#album').text("");
                     $('#artist').text("");
 
@@ -629,6 +631,13 @@ function webSocketConnect() {
 
                     $('#currenttrack').text(" " + obj.data.title);
                     var notification = "<strong><h4>" + obj.data.title + "</h4></strong>";
+
+
+
+                    if(obj.data.album) {
+                        $('#album').text(obj.data.album);
+                        notification += obj.data.album + "<br />";
+                    }
 
                     if(obj.data.artist) {
                         $('#artist').text(obj.data.artist);
