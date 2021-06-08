@@ -491,8 +491,8 @@ function webSocketConnect() {
 
                     var elapsed_minutes = Math.floor(obj.data.elapsedTime / 60);
                     var elapsed_seconds = obj.data.elapsedTime - elapsed_minutes * 60;
-
                     $('#volumeslider').slider(obj.data.volume);
+                    $('#volume-number').text(obj.data.volume+"%")
                     var progress = Math.floor(100*obj.data.elapsedTime/obj.data.totalTime);
                     $('#progressbar').slider(progress);
 
