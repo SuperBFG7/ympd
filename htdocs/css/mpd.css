@@ -9,6 +9,7 @@ body {
 
 #volumeslider {
   width: 150px;
+  float: left;
 }
 
 #volumeslider .progress {
@@ -25,6 +26,12 @@ button {
   float: left;
   margin-right: 10px;
   margin-top: 2px;
+}
+
+#volume-number {
+  float: right;
+  margin-top: 2px;
+  margin-left: 10px;
 }
 
 #breadcrump {
@@ -108,14 +115,14 @@ td:nth-child(2), td:nth-child(3) {
 }
 
 @media only screen and (max-width: 600px) {
-	td:nth-child(2), td:nth-child(3) {
-	  min-width: 0;
-	  max-width: 0;
-	}
-	td:nth-child(4), th:nth-child(4) {
-	  min-width: 10%;
-	  white-space: normal;
-	}
+  td:nth-child(2), td:nth-child(3) {
+    min-width: 0;
+    max-width: 0;
+  }
+  td:nth-child(4), th:nth-child(4) {
+    min-width: 10%;
+    white-space: normal;
+  }
 }
 
 tbody {
