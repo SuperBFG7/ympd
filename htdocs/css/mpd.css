@@ -36,13 +36,17 @@ button {
 
 #breadcrump {
   display: block;
-
   overflow: auto;
   white-space: nowrap;
 }
 
 #breadcrump > li > a{
   cursor: pointer;
+  color: #fff;
+}
+
+#breadcrump > .active{
+  color: #ddd;
 }
 
 #counter {

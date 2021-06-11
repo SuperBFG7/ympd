@@ -92,7 +92,7 @@
       <div class="col-md-10 col-xs-12">
         <div class="notifications top-right"></div>
 
-        <div class="panel panel-primary">
+        <div class="panel panel-primary" style="position: sticky;top: 55px; z-index: 99;">
           <!-- Default panel contents -->
           <div class="panel-heading"><b id="panel-heading">Queue</b>
                                      <b id="panel-heading-info" class="text pull-right"></b></div>
@@ -115,15 +115,11 @@
 
 
           </div><!-- /.panel-body -->
-
-          <ol id="breadcrump" class="breadcrumb">
-          </ol>
-
-          <div class="col-md-12" id="filter">
-          </div>
-
-
-          <!-- Table -->
+        </div><!-- /.panel -->
+        <!-- Table -->
+        <div class="panel panel-primary">
+          <div id="breadcrump" class="breadcrumb panel-heading"></div>
+          <div id="filter" class="col-md-12"></div>
           <table id="salamisandwich" class="table table-hover">
             <thead>
               <tr>
@@ -138,8 +134,7 @@
             <tbody>
             </tbody>
           </table>
-
-        </div><!-- /.panel -->
+        </div>
         <ul class="pager">
           <li id="prev" class="page-btn hide"><a href="">Previous</a></li>
           <li id="next" class="page-btn"><a href="">Next</a></li>
