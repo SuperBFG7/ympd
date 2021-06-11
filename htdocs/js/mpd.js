@@ -65,7 +65,7 @@ var app = $.sammy(function() {
         browsepath = this.params['splat'][1];
         pagination = parseInt(this.params['splat'][0]);
         current_app = 'browse';
-        $('#breadcrump').removeClass('hide').empty().append("<li><a uri=\"\" onclick=\"set_filter('')\">root</a></li>");
+        $('#breadcrump').removeClass('hide').empty().append("<li><a uri=\"\" onclick=\"set_filter('')\"></a></li>");
 		add_filter();
         $('#salamisandwich').removeClass('hide').find("tr:gt(0)").remove();
         socket.send('MPD_API_GET_BROWSE,'+pagination+','+(browsepath ? browsepath : "/"));
